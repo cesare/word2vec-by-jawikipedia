@@ -48,3 +48,11 @@ if [[ ! -f ${wakati_file_name} ]]; then
     --output=${wakati_file_name} \
     ${text_file_name}
 fi
+
+model_file_name="${base_name}.model"
+
+if [[ ! -f ${model_file_name} ]]; then
+  pipenv run python "${root_dir}/bin/generate_w2v.py" \
+    ${wakati_file_name} \
+    ${model_file_name}
+fi
