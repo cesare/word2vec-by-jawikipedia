@@ -2,10 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     htmlentities (4.3.4)
-    mini_portile2 (2.4.0)
-    nokogiri (1.10.9)
-      mini_portile2 (~> 2.4.0)
+    mini_portile2 (2.8.0)
+    nokogiri (1.13.3)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     parallel (1.19.1)
+    racc (1.6.0)
     trollop (2.9.10)
     wp2txt (0.9.1)
       htmlentities
